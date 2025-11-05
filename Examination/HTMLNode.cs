@@ -30,6 +30,16 @@ namespace Examination
         {
             Attributes.Add(new HTMLAttribute(name, value));
         }
+
+        public void DeleteChild(HTMLNode childNode)
+        {
+            Children.Remove(childNode);
+        }
+
+        public void DeleteAttribute(string name, string value)
+        {
+            Attributes.Remove(new HTMLAttribute(name, value));
+        }
     }
 
     public abstract class HTMLNode
