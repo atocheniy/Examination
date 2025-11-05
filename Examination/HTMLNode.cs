@@ -10,7 +10,7 @@ namespace Examination
     public class HTMLElement : HTMLNode
     {
         public string TagName { get; private set; }
-        List<HTMLAttribute> Attributes { get; }
+        public List<HTMLAttribute> Attributes { get; }
         public List<HTMLNode> Children { get; }
 
         public HTMLElement(string tagName)
@@ -29,6 +29,16 @@ namespace Examination
         public void AddAttribute(string name, string value)
         {
             Attributes.Add(new HTMLAttribute(name, value));
+        }
+
+        public void DeleteChild(HTMLNode childNode)
+        {
+            Children.Remove(childNode);
+        }
+
+        public void DeleteAttribute(string name, string value)
+        {
+            Attributes.Remove(new HTMLAttribute(name, value));
         }
     }
 
