@@ -10,7 +10,7 @@ namespace Examination
     public class HTMLElement : HTMLNode
     {
         public string TagName { get; private set; }
-        List<HTMLAttribute> Attributes { get; }
+        public List<HTMLAttribute> Attributes { get; }
         public List<HTMLNode> Children { get; }
 
         public HTMLElement(string tagName)
