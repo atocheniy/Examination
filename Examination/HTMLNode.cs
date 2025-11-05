@@ -9,5 +9,6 @@ namespace Examination
     internal class HTMLNode
     {
         List<HTMLAttribute> attributes;
+        //
     }
 }
