@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Examination
 {
-    internal class HTMLDocument
+    public class HTMLDocument
     {
         List<HTMLNode> nodes;
     }
