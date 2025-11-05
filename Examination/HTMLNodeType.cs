@@ -8,6 +8,6 @@ namespace Examination
 {
     public enum HTMLNodeType
     {
-        Text, Element
+        TextNode, Element
     }
 }
