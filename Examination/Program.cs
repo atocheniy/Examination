@@ -4,7 +4,10 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            HTMLDocument doc1 = new HTMLDocument();
+            doc1.Load("test.html");
+            PrintNode(doc1);
+
         }
     }
 }
