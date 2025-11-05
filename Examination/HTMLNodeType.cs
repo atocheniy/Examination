@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Examination
 {
-    internal class HTMLNodeType
+    public enum HTMLNodeType
     {
+        TextNode, Element
     }
 }
