@@ -10,9 +10,9 @@ namespace Examination
     {
         private string _htmlString;
 
-        List<HTMLNode> ChildNodes;
+        public List<HTMLNode> ChildNodes;
 
-        bool IsValidHTML;
+        public bool IsValidHTML;
 
         public HTMLDocument()
         {
@@ -47,10 +47,10 @@ namespace Examination
         {
             string[] allowedTags = { "html", "head", "body", "title", "div", "table", "tr", "td", "th", "img" };
 
-            if (!IsValidHTML)
+           /* if (!IsValidHTML)
             {
                 throw new Exception("Cannot parse invalid HTML document.");
-            }
+            }*/
 
             Stack<HTMLElement> stack = new Stack<HTMLElement>();
 
